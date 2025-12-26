@@ -1,0 +1,35 @@
+{
+  "name": "nhomesusa-loan-intake",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "capture:privatelender": "node scripts/capture-privatelender-playwright.mjs",
+    "extract:privatelender": "node scripts/extract-privatelender-har.mjs"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
+    "@supabase/supabase-js": "^2.39.0",
+    "@sendgrid/mail": "^8.1.5",
+    "clsx": "^2.1.0",
+    "next": "^14.0.4",
+    "nodemailer": "^6.9.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/nodemailer": "^6.4.18",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4",
+    "playwright": "^1.49.0",
+    "typescript": "^5.3.3"
+  }
+}
