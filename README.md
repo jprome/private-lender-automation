@@ -110,3 +110,8 @@ The payload builder supports two formats:
 ## Notes
 - To route lender responses to your email, ensure `INJECTED_EMAIL` is your address.
 - When enabling relay, confirm endpoint accepts these field names; adjust in `route.ts` as needed.
+
+## Notes
+- Add more lenders
+- Add notes in each submission
+- Give access to others to read

@@ -1,10 +1,25 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function WelcomePage() {
   return (
     <main className="container container-center">
       <div className="card hero">
-        <div className="hero-badge">NHomesUSA</div>
+        <div className="hero-header">
+          <div className="hero-logo" aria-hidden="true">
+            <Image
+              src="/logo.jpg"
+              alt=""
+              width={72}
+              height={72}
+              priority
+              className="hero-logo-img"
+            />
+          </div>
+          <div className="hero-brand">
+            <div className="hero-badge">NHomesUSA</div>
+          </div>
+        </div>
         <h1 className="h1">Get terms in under 3 minutes</h1>
         <p className="p">
           Answer a few questions about the property and your loan request. Submissions are reviewed before being sent to the lender.
