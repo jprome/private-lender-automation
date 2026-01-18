@@ -6,7 +6,9 @@ create table if not exists intake_submissions (
   data jsonb not null,
   status text not null default 'received',
   user_agent text
+  ,branch text default 'main'
 );
 
 create index if not exists intake_submissions_created_at_idx on intake_submissions (created_at);
 create index if not exists intake_submissions_status_idx on intake_submissions (status);
+create index if not exists intake_submissions_branch_idx on intake_submissions (branch);

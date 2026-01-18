@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
   // Store submission
   const { data: inserted, error } = await client
     .from('intake_submissions')
-    .insert({ email: data.email, data, user_agent: String(userAgent), status: 'pending_review' })
+    .insert({ email: data.email, data, user_agent: String(userAgent), status: 'pending_review', branch: 'demo' })
     .select('id')
     .single();
 
