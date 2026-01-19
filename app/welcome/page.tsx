@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 
 export default function WelcomePage() {
   return (
@@ -17,28 +17,37 @@ export default function WelcomePage() {
             />
           </div>
           <div className="hero-brand">
-            <div className="hero-badge">NHomesUSA</div>
+            <div className="hero-badge">D&G Business Services</div>
           </div>
         </div>
         <h1 className="h1">Get terms in under 3 minutes</h1>
         <p className="p">
-          Answer a few questions about the property and your loan request. Submissions are reviewed before being sent to the lender.
+          Answer a few questions about the property and your loan request.
+          Submissions are reviewed before being sent to the lender.
         </p>
 
         <div className="hero-grid">
           <div className="hero-item">
             <div className="hero-title">Fast</div>
-            <div className="hero-text">Simple multi-step form with progress tracking.</div>
+            <div className="hero-text">
+              Simple multi-step form with progress tracking.
+            </div>
           </div>
           <div className="hero-item">
             <div className="hero-title">Reviewed</div>
-            <div className="hero-text">We can validate and send only the submissions we approve.</div>
+            <div className="hero-text">
+              We can validate and send only the submissions we approve.
+            </div>
           </div>
         </div>
 
         <div className="button-row" style={{ marginTop: 18 }}>
-          <Link className="link" href="/admin">Admin</Link>
-          <Link className="button" href="/survey">Start survey</Link>
+          <Link className="link" href="/admin">
+            Admin
+          </Link>
+          <Link className="button" href="/survey">
+            Start survey
+          </Link>
         </div>
       </div>
     </main>
