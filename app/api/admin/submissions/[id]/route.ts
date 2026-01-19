@@ -18,7 +18,7 @@ export async function PATCH(req: NextRequest, { params }: { params: { id: string
     .from('intake_submissions')
     .update({ data: parse.data, status: 'pending_review' })
     .eq('id', params.id)
-    .eq('branch', 'demo')
+    .eq('branch', 'db')
     .select('id, data, status')
     .maybeSingle();
 

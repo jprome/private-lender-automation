@@ -9,7 +9,7 @@ export async function POST(_req: Request, { params }: { params: { id: string } }
     .from('intake_submissions')
     .select('id, email, data')
     .eq('id', params.id)
-    .eq('branch', 'demo')
+    .eq('branch', 'db')
     .single();
 
   if (error || !row) {
